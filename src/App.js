@@ -11,7 +11,7 @@ function App() {
 }
 
 function callApi() {
-    fetch('https://simple-node-server-niru.herokuapp.com/', { method: 'GET' })
+    fetch('https://simple-node-server-niru.herokuapp.com/detailes', { method: 'GET' })
         .then(data => data.json())
         .then(json => alert(JSON.stringify(json)))
 }
